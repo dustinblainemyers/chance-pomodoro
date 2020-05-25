@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+body {
+  text-shadow: 1px 1px 2px black;
+  font-size: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: rgb(4, 1, 46);
+
+  font-family: "Trocchi", serif;
+  margin: 0;
+  max-width: 350px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  max-width: 600px;
+  background: #e1dfb095;
+  margin: 0 auto;
+  border: solid 5px rgba(83, 196, 221, 0.919);
+  height: 100vh;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+label + div {
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+input[type="range"] {
+  -webkit-appearance: none;
+  background: transparent;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #fff;
+  height: 18px;
+  width: 18px;
+  margin-top: -8px;
+  border-radius: 99px;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 4px;
+  background: #ddd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.takeChances {
+  background-color: #c1f6f7;
+  border-radius: 32px;
+  text-shadow: 1px 1px 2px black;
+  font-size: 20px;
+  padding: 16px 31px;
+  text-decoration: none;
+  outline: none;
 }
